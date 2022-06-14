@@ -1,6 +1,6 @@
 PKGNAME=argo-probe-nagios
 SPECFILE=${PKGNAME}.spec
-FILES=check_nagios ${SPECFILE}
+FILES=${SPECFILE} src/*
 
 PKGVERSION=$(shell grep -s '^Version:' $(SPECFILE) | sed -e 's/Version:\s*//')
 
